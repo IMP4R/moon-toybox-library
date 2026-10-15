@@ -1,0 +1,25 @@
+{
+  "name": "moon-toybox",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Public subset: moon/knot icons and optional pearl WebGL",
+  "exports": {
+    ".": "./lib/icons.js",
+    "./webgl": "./lib/webgl.js",
+    "./progressive": "./lib/progressive.js",
+    "./icons/*": "./icons/*",
+    "./fields/*": "./fields/*"
+  },
+  "peerDependencies": {
+    "three": "^0.180.0",
+    "three-mesh-bvh": "^0.9.1"
+  },
+  "peerDependenciesMeta": {
+    "three": {
+      "optional": true
+    },
+    "three-mesh-bvh": {
+      "optional": true
+    }
+  }
+}
